@@ -1,1 +1,20 @@
 // Mixins Here
+.ShortenCenter(@width) {
+    width: @width;
+    margin: 0 auto;
+}
+.button(@color, @font_color, @width, @font_size, @padding, @radius)
+{
+    width: @width;
+    background-color: @color;
+    padding: @padding;
+    color: @font_color;
+    border-radius: @radius;
+    outline: none;
+    font-size: @font_size;
+    text-align: center;
+}
+.ThirdMixin {
+    width: 100%;
+    margin: 0;
+}

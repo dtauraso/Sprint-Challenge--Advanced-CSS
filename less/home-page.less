@@ -1,7 +1,10 @@
 // Home Content
 
 .home {
-
+  .ShortenCenter(80%);
+  @media @phone {
+    width: 100%;
+  }
   .intro {
 
     h2 {
@@ -11,19 +14,59 @@
     p {
       padding:0 15px;
     }
+    .main-header-img {
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
   
   }
 
   .space-images {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
 
+    flex-wrap: wrap;
+    
+    width: 100%;
+    // first part of rules for displaying the top image
+    @media @phone {
+      // display: none;
+      // display: 
+      display: block;
+      // flex-wrap: nowrap;
+
+      #DisplayThisOne {
+        // width: 500px;
+        display: block;
+        margin-top: 20px;
+        // margin-left: 2%;
+        // margin-right: 2%;
+        border-radius: 20px;
+
+        // width: 100%;
+      }
+    }
+    @media @phone {
+
+      .IgnoreThis {
+        display: none;
+      }
+      
+    }
     img {
+      
       width: 28%;
+      
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      // second part of rules for displaying the top image
+      @media @phone {
+        .ShortenCenter(90%);
+        
+      }
     }
   }
 
@@ -40,15 +83,22 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 40px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 30px 40px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 20px 20px;
+      margin-top: 20px;
+    }
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+        padding-top: 10px;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -58,13 +108,50 @@
       }
 
       .btn {
+        .button(@header-font-color,
+                @white,
+                27%,
+                1.7rem,
+                2%,
+                5px);
+        @media @phone {
+          .button(@header-font-color,
+                @white,
+                100%,
+                1.8rem,
+                5%,
+                5px);
+        }
+        &:hover {
+
+          .button(@white,
+                @header-font-color,
+                27%,
+                1.7rem,
+                2%,
+                5px);
+          @media @phone {
+            .button(@white,
+                  @header-font-color,
+                  100%,
+                  1.8rem,
+                  5%,
+                  5px);
+          }
+          
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+
+        // width: 100%;
+        // margin: 0;
+        .ThirdMixin();
+      }
       img {
         width: 100%;
         height: auto;
