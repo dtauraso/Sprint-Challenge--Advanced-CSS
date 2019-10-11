@@ -2,6 +2,7 @@
 
 .home {
   .ShortenCenter(80%);
+  // @media 
   .intro {
 
     h2 {
@@ -65,10 +66,15 @@
 
       .btn {
         .button(@header-font-color,
+                @white,
                 50%,
                 1.6rem,
                 5%,
                 5px);
+        &:hover {
+          color: @header-font-color;
+          background-color: @white;
+        }
       }
     }
 
