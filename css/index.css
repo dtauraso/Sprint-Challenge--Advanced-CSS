@@ -315,14 +315,26 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  width: 100%;
+  width: 27%;
   background-color: #FFFFFF;
-  padding: 5%;
+  padding: 2%;
   color: #23293B;
   border-radius: 5px;
   outline: none;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 5%;
+    color: #23293B;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
