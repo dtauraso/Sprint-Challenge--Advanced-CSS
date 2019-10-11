@@ -160,6 +160,19 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.NavBar {
+  background-color: #F6F6F6;
+}
+.NavBar h1 {
+  text-align: center;
+}
+.NavBar nav {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,20 +182,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.NavBar {
-  width: 80%;
-  margin: 0 auto;
-}
-.NavBar h1 {
-  text-align: center;
-}
-.NavBar nav {
-  display: flex;
-  width: 50%;
-  margin: 0 auto;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .home {
   width: 80%;
