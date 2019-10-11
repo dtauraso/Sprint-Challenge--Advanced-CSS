@@ -260,9 +260,9 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin-top: 40px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 30px 40px;
   display: flex;
   justify-content: center;
 }
@@ -289,7 +289,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 30%;
+  width: 27%;
   background-color: #23293B;
   padding: 2%;
   color: #FFFFFF;
