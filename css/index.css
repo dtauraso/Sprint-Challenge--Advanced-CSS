@@ -177,11 +177,26 @@ footer {
 .NavBar h1 {
   text-align: center;
 }
+.NavBar nav {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home {
+  width: 80%;
+  margin: 0 auto;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .main-header-img img {
+  width: 100%;
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
